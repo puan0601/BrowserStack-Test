@@ -82,6 +82,7 @@ exports.config = {
           browser.executeScript('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed","reason": "At least 1 assertion failed"}}');
         }
     }
+
     //
     // =====
     // Hooks
@@ -221,3 +222,7 @@ exports.config = {
     //onReload: function(oldSessionId, newSessionId) {
     //}
 }
+// Code to support common capabilities
+exports.config.capabilities.forEach(function(caps){
+    Object.assign(caps, exports.config.commonCapabilities);
+});
