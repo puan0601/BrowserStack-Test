@@ -11,32 +11,25 @@ exports.config = {
     // Patterns to exclude.
     exclude: [],
    
+    commonCapabilities: {
+        'bstack:options': {
+          sessionName: 'parallel_test',
+          buildName: 'browserstack-build-1',
+          debug: true
+        },
+    },
+
     capabilities: [
         {
-            browserName: 'Chrome',
-            'bstack:options': {
-                os: "Windows",
-                osVersion: "10",
-                sessionName: 'chromewindows10_test',
-                buildName: 'webdriverio-browserstack-takehome-test'
-            }
+            browserName: 'Chrome',        
         },{
-            browserName: 'Firefox',
-            'bstack:options': {
-                os: "Windows",
-                osVersion: "10",
-                sessionName: 'firefoxwindows10_test',
-                buildName: 'webdriverio-browserstack-takehome-test'
-            }
+            browserName: 'Firefox',          
         },{
             browserName: 'Internet Explorer',
-            buildName: 'webdriverio-browserstack-takehome-test'
         },{
             browserName: 'Edge',
-            buildName: 'webdriverio-browserstack-takehome-test'
         },{
             browserName: 'Safari',
-            buildName: 'webdriverio-browserstack-takehome-test'
         }
     ],
 
