@@ -10,7 +10,10 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [],
-   
+    commonCapabilities: {
+        name: 'parallel_test',
+        build: 'webdriverio-browserstack-takehome-test'
+      },
     capabilities: [
         {
             browserName: 'Chrome',
