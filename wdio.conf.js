@@ -11,12 +11,11 @@ exports.config = {
     // Patterns to exclude.
     exclude: [],
    
-    commonCapabilities: {
-        'bstack:options': {
-          sessionName: 'parallel_test',
-          buildName: 'browserstack-test-1',
-        },
-    },
+    // commonCapabilities: {
+    //     'bstack:options': {
+         
+    //     },
+    // },
 
     capabilities: [
         {
@@ -223,6 +222,6 @@ exports.config = {
     //}
 }
 // Code to support common capabilities
-exports.config.capabilities.forEach(function(caps){
-    Object.assign(caps, exports.config.commonCapabilities);
-});
+// exports.config.capabilities.forEach(function(caps){
+//     Object.assign(caps, exports.config.commonCapabilities);
+// });
