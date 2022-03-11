@@ -14,7 +14,7 @@ exports.config = {
     commonCapabilities: {
         'bstack:options': {
           sessionName: 'parallel_test',
-          buildName: 'browserstack-build-1',
+          build: 'browserstack-build-1',
           debug: true
         },
     },
