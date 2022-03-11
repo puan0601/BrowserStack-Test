@@ -17,9 +17,21 @@ exports.config = {
             'bstack:options': {
                 os: "Windows",
                 osVersion: "10",
-                sessionName: 'single_test',
-                buildName: 'browserstack-build-1'
-            },
+                sessionName: 'chromewindows10_test',
+            }
+        },{
+            browserName: 'Firefox',
+            'bstack:options': {
+                os: "Windows",
+                osVersion: "10",
+                sessionName: 'firefoxwindows10_test',
+            }
+        },{
+            browserName: 'Internet Explorer'
+        },{
+            browserName: 'Edge'
+        },{
+            browserName: 'Safari'
         }
     ],
 
