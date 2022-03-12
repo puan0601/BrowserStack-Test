@@ -5,8 +5,8 @@ Tests can be found in test/specs/
 
 ## Setup
 
-* Clone the repo
-* Install dependencies, run `npm install`
+* Clone the repo: `git clone https://github.com/puan0601/BrowserStack-Test`
+* Install dependencies: `npm install`
 
 ## Tests
-* Run tests, run `npx wdio`
+* Run tests: `npx wdio`
