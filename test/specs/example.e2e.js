@@ -1,6 +1,4 @@
-const { default: BrowserstackService } = require("@wdio/browserstack-service");
-
-describe('BStackdemo Home', () => {
+describe('BStackdemo Home ', () => {
     it('Should load with the proper title', async () => {
         await browser.url("https://bstackdemo.com/");
         await expect(browser).toHaveTitle('StackDemo');
@@ -32,23 +30,23 @@ describe('BStackdemo Home', () => {
     })
 });
 
-describe('Sign In', () => {
+describe('Sign In Page ', () => {
     it('Should have a username input', async () => {
         await browser.url("https://bstackdemo.com/signin");
         const usernameInput = $('#username');
-        await expect (usernameInput).toExist();
+        await expect(usernameInput).toExist();
     });
 
     it('Should have a password input', async () => {
         await browser.url("https://bstackdemo.com/signin");
         const passwordInput = $('#password');
-        await expect (passwordInput).toExist();
+        await expect(passwordInput).toExist();
     });
 
     it('Should have a login button', async () => {
         await browser.url("https://bstackdemo.com/signin");
         const button = $('#login-btn');
-        await expect (button).toExist();
+        await expect(button).toExist();
     });
 })
 
