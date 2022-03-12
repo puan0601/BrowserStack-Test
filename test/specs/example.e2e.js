@@ -1,8 +1,7 @@
 describe('My Login application', () => {
     it('Homepage should load properly', async () => {
-        await browser.url("https://bstackdemo.com/");
-        let signin = $('#signin');
-        should.exist(signin);
+        browser.url("https://bstackdemo.com/");
+        await expect(browser).toHaveTitleContaining('Stack');
         // await $('#signin').click();
 
         // await $('#username').setValue(['demouser', 'enter']);
@@ -14,5 +13,4 @@ describe('My Login application', () => {
         //     'demouser');
     });
 });
-
 

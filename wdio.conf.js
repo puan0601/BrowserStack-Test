@@ -16,29 +16,30 @@ exports.config = {
          
     //     },
     // },
+    maxInstances: 10,
 
     capabilities: [
         {
-            browserName: 'Chrome',        
+            browserName: 'Chrome'        
         },{
-            browserName: 'Firefox',          
+            browserName: 'Firefox'          
         },{
-            browserName: 'Internet Explorer',
+            browserName: 'iPhone'
         },{
-            browserName: 'Edge',
+            browserName: 'android'
         },{
-            browserName: 'Safari',
+            browserName: 'Edge'
         }
     ],
 
-    logLevel: 'info',
+    logLevel: 'warn',
     coloredLogs: true,
     screenshotPath: './errorShots/',
     baseUrl: '',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
-    host: 'hub-cloud.browserstack.com',
+    host: 'hub.browserstack.com',
   
     before: function () {
         var chai = require('chai'),
