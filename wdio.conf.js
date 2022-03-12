@@ -6,7 +6,7 @@ exports.config = {
     updateJob: false,
 
     specs: [
-        './test/specs/example.e2e.js'
+        './test/specs/browserstack.e2e.js'
     ],
     // Patterns to exclude.
     exclude: [],
