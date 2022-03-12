@@ -16,13 +16,13 @@ describe('BStackdemo Home ', () => {
         await expect(items).length < 1;
     });
 
-    it('Should have a Sign In link', async () => {
+    it('Should have a sign in link', async () => {
         await browser.url("https://bstackdemo.com/");
         const signin = $('#signin');
         await expect(signin).toExist();
     })
 
-    it('Sign In link should bring you to the sign in page', async () => {
+    it('Sign in link should bring you to the sign in page', async () => {
         await browser.url("https://bstackdemo.com/");
         const signin = $('#signin');
         await signin.click();
@@ -43,7 +43,7 @@ describe('Sign In Page ', () => {
         await expect(passwordInput).toExist();
     });
 
-    it('Should have a login button', async () => {
+    it('Should have a sign in button', async () => {
         await browser.url("https://bstackdemo.com/signin");
         const button = $('#login-btn');
         await expect(button).toExist();

@@ -11,11 +11,6 @@ exports.config = {
     // Patterns to exclude.
     exclude: [],
    
-    // commonCapabilities: {
-    //     'bstack:options': {
-         
-    //     },
-    // },
     maxInstances: 10,
 
     capabilities: [
