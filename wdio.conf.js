@@ -43,7 +43,7 @@ exports.config = {
     before: function () {
         var chai = require('chai'),
         expect = chai.expect,
-        should = chai.Should();
+        should = chai.should();
     },
     
     services: ['browserstack'],
